@@ -20,52 +20,63 @@
             </nav>
       </header>
       
-    <!--Section-->
+    <!--main-->
 
 <main>
   <div class="contenedor">
 <h1 class="titulo">PRANA</h1>
 <figure>
-  <img src="/fotos/images.jpg" alt="logo de la empresa">
+  <img src="/fotos/productos de belleza (2).png" alt="logo de la empresa">
 </figure>
- <!-- <h3> Nuestros productos de belleza son 100% naturales, y sin testeo animal.</h3>-->
+ 
 </div>
 </main>
-
+<div class="slogan">
 <h3> Nuestros productos de belleza son 100% naturales, y sin testeo animal.</h3>
-<section>
-<div>
-    <p>Añade los datos de tu cupòn y obten tu regalo:
-    </p>
-    
-        <label>Numero de tarjeta:</label> <br>
-        <input type="text" placeholder="Ingrese el numero de tarjeta" id="number"  maxlength="10" required>
-        <input type="button" onclick="ordenar()" value="Enviar"> 
-      
 </div>
 
-<h1>¡Felicidades! Te han regalado el siguiente producto:
+ <!--Section-->
+<section>
+<div class=" section">
+    <p class=" parrafo">Añade los datos de tu cupón y obten tu regalo:
+    </p>
+        <div class="validar">
+        <input type="text" placeholder="Ingrese el numero de tarjeta" id="number"  maxlength="10" required>
+        <input type="button" class="button" onclick="ordenar()" value="Enviar"> 
+      </div>
+</div>
+
+<!--regalo-->
+
+<div class="regalo">
+<h1><b>¡Felicidades! </b>Te han regalado el siguiente producto:
 </h1>
 
 <img src="/fotos/images (5).jpg">
-<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<label>Indicanos tus datos para realizar el envìo.</label>
-<form action="">
-    <label>Nombre</label>
-    <input type="text" placeholder="Ingresa tu nombre" id="nombre" required>
-    <label>Email</label>
-    <input type="email" placeholder="Ingresa tu correo" id="email" required>
-    <label>Rut</label>
-    <input type="text" placeholder="Ingresa tu rut" id="rut" required>
+</div>
 
 
-<label>Comuna</label>
-    <select name="">
+
+
+<!--formuario-->
+<div class="formulario">
+
+  <label>Indicanos tus datos para realizar el envìo.</label>
+  
+  <form action="">
+  
+    <label for="nombre">Nombre</label>
+    <input type="text" placeholder="Ingresa tu nombre" class="recuadro" id="nombre" required>
+    <label for="email">Email</label>
+    <input type="email" placeholder="Ingresa tu correo" class="recuadro" id="email" required>
+  
+    <label for="rut">Rut</label>
+    <input type="text" placeholder="Ingresa tu rut" class="recuadro" id="rut" required>
+    <label for="telefono">Telefono</label>
+    <input type="text" placeholder="Ingresa tu telefono " class="recuadro"  id="telefono" required>
+  
+<label for="comuna">Comuna</label>
+    <select name="" class="recuadro">
         <option value="Santiago centro">Santiago centro</option>
         <option value="Ñuñoa">Ñuñoa</option>
         <option value="Vitacura">Vitacura</option>
@@ -74,36 +85,36 @@
         <option value="La florida">La florida</option>
     </select>
 
-<label>Calle</label>
-    <input type="text" placeholder="Ingresa el nombre" id="calle" required>
-<label>Dep/casa</label>
-    <input type="text" placeholder="Ingresa tu numero " id="dep/casa" required>
-<label>Telefono</label>
-    <input type="text" placeholder="Ingresa tu telefono " id="telefono" required>
+<label for="calle">Calle</label>
+    <input type="text" placeholder="Ingresa el nombre" class="recuadro" id="calle" required>
+  
+    <label for="dep/casa">Dep/casa</label>
+    <input type="text" placeholder="Ingresa tu numero " class="recuadro" id="dep/casa" required>
 
-<label>Fecha de entrega</label>
-    <input type="date">
-<label>Hora de entrega</label>
-    <input type="time">
 
-<label>Mensaje</label>
-   <textarea rows="10" cols="30" placeholder=""></textarea>
+<label for="fecha">Fecha de entrega</label>
+    <input type="date" id="fecha" class="recuadro">
+  
+<label for="hora">Hora de entrega</label>
+    <input type="time" id="hora" class="recuadro">
+  
+  
+<label for="mensaje">Mensaje</label>
+   <textarea rows="10" cols="30" placeholder="" id="mensaje" class="recuadro"></textarea>
+   
+  
+  <button class="button"> Envìar</button>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <button> Envìar</button>
+    
+  
 </form>
+</div>
 </section>
 
 
 <!--Footer-->
 <footer>
-  <p>Hecho con amor por Veronica</p>
+  <p class="footer">Hecho con amor por Veronica</p>
 </footer>
     
     <script src="index.js" type="module"></script>

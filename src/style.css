@@ -1,5 +1,6 @@
 *{
     margin:0;
+    /*background-color: #E5E5E5;*/
     
 }
 header{
@@ -41,15 +42,9 @@ a{
 
 }
 
-/*section*/
+/*main*/
 
 
-main{
-
-
-    
-    
-}
 .titulo{
     padding-top: 30px;
     font-size: 100px;
@@ -67,13 +62,140 @@ height: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: rgba(242, 248, 248, 0.945);
   
 }
 
+.slogan{
+    
+    width: 100%;
+    height: 200px;
+    background-color: #fadbe1;
+    font-size: 30px;
+    padding: 20px;
+
+            
+    }
+.validar{
+    padding-top: 40px;
+    
+}
 h3{
     
+       padding-top: 50px;
+       text-align: center;
+       color:rgb(158, 44, 133);
+       
+           
+        }
+/*section*/
+
+.section{
     
+    width: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+     }
+     section{
+
         
+        background-color: rgba(242, 248, 248, 0.945);
+        padding-top: 150px; 
+             
+          }
+.parrafo{
+
         
+       font-size: 50px;
+       color:rgb(74, 214, 132);
+             
+            
+         }
+#number{
+
+        
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+                  
+                 
     }
 
+    .button{
+
+        
+        height: 50px;
+        width: 100px;
+        border-radius: 20px;
+                      
+                     
+        }
+
+/*regalo*/
+
+        .regalo{
+
+        
+        width: auto;
+        height: 400px;
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+                          
+                         
+            }
+
+ img{
+
+     padding-top: 30px;
+     border-radius: 10px;
+ }
+
+ 
+
+ .recuadro{
+     width: 200px;
+     height: 40px;
+     border-radius: 20px;
+     
+     
+     
+ }
+
+ footer{
+     margin-top: 30px;
+     width: 100%;
+     height: 100px;
+     background: rgba(207, 105, 168, 0.9);
+ }
+ .footer{
+     font-size: 30px;
+     color:seashell;
+     text-align: center;
+     padding-top: 20px;
+ }
+ label{
+     display: block;
+     font-weight: 700;
+     cursor:pointer;
+
+ }
+ .formulario{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap:20px;
+     line-height: 2;
+     letter-spacing: 1px;
+ }
+ .recuadro{
+     max-width: 200px;
+     max-height: 200px;
+     
+ }
+ 
+ 
