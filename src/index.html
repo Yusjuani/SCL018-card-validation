@@ -6,9 +6,106 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  
+      <!--HEADER-->
+  
+  
+      <header>
+          <nav class="menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+      </header>
+      
+    <!--Section-->
+
+<main>
+  <div class="contenedor">
+<h1 class="titulo">PRANA</h1>
+<figure>
+  <img src="/fotos/images.jpg" alt="logo de la empresa">
+</figure>
+ <!-- <h3> Nuestros productos de belleza son 100% naturales, y sin testeo animal.</h3>-->
+</div>
+</main>
+
+<h3> Nuestros productos de belleza son 100% naturales, y sin testeo animal.</h3>
+<section>
+<div>
+    <p>Añade los datos de tu cupòn y obten tu regalo:
+    </p>
+    
+        <label>Numero de tarjeta:</label> <br>
+        <input type="text" placeholder="Ingrese el numero de tarjeta" id="number"  maxlength="10" required>
+        <input type="button" onclick="ordenar()" value="Enviar"> 
+      
+</div>
+
+<h1>¡Felicidades! Te han regalado el siguiente producto:
+</h1>
+
+<img src="/fotos/images (5).jpg">
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<label>Indicanos tus datos para realizar el envìo.</label>
+<form action="">
+    <label>Nombre</label>
+    <input type="text" placeholder="Ingresa tu nombre" id="nombre" required>
+    <label>Email</label>
+    <input type="email" placeholder="Ingresa tu correo" id="email" required>
+    <label>Rut</label>
+    <input type="text" placeholder="Ingresa tu rut" id="rut" required>
+
+
+<label>Comuna</label>
+    <select name="">
+        <option value="Santiago centro">Santiago centro</option>
+        <option value="Ñuñoa">Ñuñoa</option>
+        <option value="Vitacura">Vitacura</option>
+        <option value="Macul">Macul</option>
+        <option value="San Miguel">San Miguel</option>
+        <option value="La florida">La florida</option>
+    </select>
+
+<label>Calle</label>
+    <input type="text" placeholder="Ingresa el nombre" id="calle" required>
+<label>Dep/casa</label>
+    <input type="text" placeholder="Ingresa tu numero " id="dep/casa" required>
+<label>Telefono</label>
+    <input type="text" placeholder="Ingresa tu telefono " id="telefono" required>
+
+<label>Fecha de entrega</label>
+    <input type="date">
+<label>Hora de entrega</label>
+    <input type="time">
+
+<label>Mensaje</label>
+   <textarea rows="10" cols="30" placeholder=""></textarea>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button> Envìar</button>
+</form>
+</section>
+
+
+<!--Footer-->
+<footer>
+  <p>Hecho con amor por Veronica</p>
+</footer>
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
