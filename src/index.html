@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
   </head>
   <body>
   
@@ -42,7 +44,7 @@
     </p>
         <div class="validar">
         <input type="text" placeholder="Ingrese el numero de tarjeta" id="number"  maxlength="10" required>
-        <input type="button" class="button" onclick="ordenar()" value="Enviar"> 
+        <input type="button" value="Enviar"  id="validar" class="button" > 
       </div>
 </div>
 
@@ -59,12 +61,13 @@
 
 
 <!--formuario-->
+
 <div class="formulario">
 
-  <label>Indicanos tus datos para realizar el envìo.</label>
+  <label class="datos">Indicanos tus datos para realizar el envìo.</label>
   
   <form action="">
-  
+  <div class="grid">
     <label for="nombre">Nombre</label>
     <input type="text" placeholder="Ingresa tu nombre" class="recuadro" id="nombre" required>
     <label for="email">Email</label>
@@ -84,7 +87,9 @@
         <option value="San Miguel">San Miguel</option>
         <option value="La florida">La florida</option>
     </select>
-
+ 
+  </div>
+  <div class="grid">
 <label for="calle">Calle</label>
     <input type="text" placeholder="Ingresa el nombre" class="recuadro" id="calle" required>
   
@@ -98,25 +103,40 @@
 <label for="hora">Hora de entrega</label>
     <input type="time" id="hora" class="recuadro">
   
-  
+
+
 <label for="mensaje">Mensaje</label>
    <textarea rows="10" cols="30" placeholder="" id="mensaje" class="recuadro"></textarea>
    
   
-  <button class="button"> Envìar</button>
-
-    
   
-</form>
 </div>
-</section>
 
+</form>
+<button class="button"> Envìar</button>
+
+</div>
 
 <!--Footer-->
 <footer>
-  <p class="footer">Hecho con amor por Veronica</p>
+<ul>
+  <li>
+<li><p class="footer">PRANA</p></li>
+<li><i class="fas fa-envelope" class="icono"><p>prana@gmail.com</p></i></li>
+<li><i class="fas fa-phone" class="icono"><p>+56 9 49728340</p></i></li>
+<li><i class="fas fa-map-marker-alt" class="icono"> <p>Santiago de Chile</p></i></li>
+</li>
+</ul>
+  
+  
+  
+  
+  
 </footer>
-    
+</section>
+
+
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
