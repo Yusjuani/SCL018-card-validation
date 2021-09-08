@@ -146,7 +146,7 @@ h3{
 
 /*regalo*/
 
-        .regalo{
+.regalo{
 
         
         width: auto;
@@ -156,9 +156,13 @@ h3{
         flex-direction: column;
         align-items: center;
         padding-top: 40px;
-                          
+                         
                          
             }
+#regalo{
+    display:none;
+    
+}
 
  img{
 
