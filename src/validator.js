@@ -1,4 +1,4 @@
-const validator = {
+const validator = {//objeto
     isValid(inputValue){ //funcion que toma valor input
         let arrayNumber = inputValue.split(""); //convertir string en array
         //console.log(arrayNumber);
@@ -6,10 +6,20 @@ const validator = {
         //console.log(reverseNumber);
         //return reverseNumber; //retornar el resultado
       
-       let addNumber = 0 //variable que
-       for(let i = 0; i < reverseNumber.length; i++){//recorrer los numeros
+       let addNumber = 0 
+       for(let i = 0; i<reverseNumber.length; i++){
+           if(i % 2 === 1){
+               let multiplicacionNumber = reverseNumber[i]*2;
+               if(multiplicacionNumber >= 10){
+                multiplicacionNumber = multiplicacionNumber-9;
+                   addNumber+= multiplicacionNumber;
+               }
+           }
+       }
+       //variable que
+       /*for(let i = 0; i < reverseNumber.length; i++){//recorrer los numeros
            const number = reverseNumber[i];
-           const position = i + 1; //tomar numeros pares
+           const position = i + 1; //defino position para que me tome los pares
 
            if(position % 2 === 0){  //numero par
                const numberMultiplicado = number * 2;//multiplicarlo por 2
@@ -27,7 +37,7 @@ const validator = {
             addNumber += parseInt(number);
 
             }
-       }
+       }*/
    console.log(addNumber);
    console.log(reverseNumber);
 
@@ -43,7 +53,7 @@ const validator = {
      const numeroInvertido = inputValue.split("").reverse(); //tomo el input original y convierto en array lo reverso
      console.log(numeroInvertido);
 
-     let inputTarjeta = "";
+     let inputTarjeta = "";//tomara los valores
      for(let i = 0; i < numeroInvertido.length; i++){
          if(i < 4){
             inputTarjeta += numeroInvertido[i]
@@ -63,3 +73,4 @@ const validator = {
 
 export default validator;
 
+//dentro de un objeto tengo 2 funciones.}
