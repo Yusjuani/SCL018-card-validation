@@ -6,8 +6,8 @@ const validator = {//objeto
         //console.log(reverseNumber);
         //return reverseNumber; //retornar el resultado
       
-       let addNumber = 0 
-       for(let i = 0; i<reverseNumber.length; i++){
+      let addNumber = 0 
+       /* for(let i = 0; i<reverseNumber.length; i++){
            if(i % 2 === 1){
                let multiplicacionNumber = reverseNumber[i]*2;
                if(multiplicacionNumber >= 10){
@@ -15,12 +15,11 @@ const validator = {//objeto
                    addNumber+= multiplicacionNumber;
                }
            }
-       }
+       }*/
        //variable que
-       /*for(let i = 0; i < reverseNumber.length; i++){//recorrer los numeros
+       for(let i = 0; i < reverseNumber.length; i++){//recorrer los numeros
            const number = reverseNumber[i];
            const position = i + 1; //defino position para que me tome los pares
-
            if(position % 2 === 0){  //numero par
                const numberMultiplicado = number * 2;//multiplicarlo por 2
             if(numberMultiplicado >= 10){ // si es mayor o igual a 10
@@ -37,7 +36,7 @@ const validator = {//objeto
             addNumber += parseInt(number);
 
             }
-       }*/
+       }
    console.log(addNumber);
    console.log(reverseNumber);
 
