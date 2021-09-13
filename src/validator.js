@@ -1,22 +1,13 @@
 const validator = {//objeto
     isValid(inputValue){ //funcion que toma valor input
+        if(inputValue.length < 1) return false; //no toma input vacio
         let arrayNumber = inputValue.split(""); //convertir string en array
         //console.log(arrayNumber);
         let reverseNumber= arrayNumber.reverse();// convertir el array en reverso
         //console.log(reverseNumber);
         //return reverseNumber; //retornar el resultado
       
-      let addNumber = 0 
-       /* for(let i = 0; i<reverseNumber.length; i++){
-           if(i % 2 === 1){
-               let multiplicacionNumber = reverseNumber[i]*2;
-               if(multiplicacionNumber >= 10){
-                multiplicacionNumber = multiplicacionNumber-9;
-                   addNumber+= multiplicacionNumber;
-               }
-           }
-       }*/
-       //variable que
+      let addNumber = 0 //variable que toma los valores
        for(let i = 0; i < reverseNumber.length; i++){//recorrer los numeros
            const number = reverseNumber[i];
            const position = i + 1; //defino position para que me tome los pares
@@ -53,7 +44,8 @@ const validator = {//objeto
      console.log(numeroInvertido);
 
      let inputTarjeta = "";//tomara los valores
-     for(let i = 0; i < numeroInvertido.length; i++){
+
+     for(let i = 0; i < numeroInvertido.length; i++){ 
          if(i < 4){
             inputTarjeta += numeroInvertido[i]
              
