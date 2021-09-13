@@ -11,7 +11,7 @@ if(validator.isValid(inputValue)  === true){       //si esta funcion es %10
 document.getElementById("regalo").style.display="block"; //aparezca regalo   
 alert("Tarjeta valida");
 }else{
-    alert("card no valid");
+    alert("Ingresa un número válido");
 }
 
 

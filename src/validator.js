@@ -28,8 +28,8 @@ const validator = {//objeto
 
             }
        }
-   console.log(addNumber);
-   console.log(reverseNumber);
+   //console.log(addNumber);
+   //console.log(reverseNumber);
 
    if(addNumber % 10 === 0){
        return true;
@@ -41,12 +41,12 @@ const validator = {//objeto
 
      maskify(inputValue){
      const numeroInvertido = inputValue.split("").reverse(); //tomo el input original y convierto en array lo reverso
-     console.log(numeroInvertido);
+     //console.log(numeroInvertido);
 
      let inputTarjeta = "";//tomara los valores
 
      for(let i = 0; i < numeroInvertido.length; i++){ 
-         if(i < 4){
+         if(i < 4){ 
             inputTarjeta += numeroInvertido[i]
              
          }else{
