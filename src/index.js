@@ -14,12 +14,11 @@ alert("Tarjeta valida");
     alert("Ingresa un número válido");
 }
 
-
 document.getElementById("number").value = ""; //desaparezca el valor input
 
-validator.isValid(inputValue) // llame funcion de isValid  de validator.js
-console.log(validator.isValid(inputValue));
-console.log(validator.maskify(inputValue));//llamo funcion maskify(tomo ojeto con funcion mas valor)
+validator.isValid(inputValue);// llame funcion de isValid  de validator.js
+//console.log(validator.isValid(inputValue));
+//console.log(validator.maskify(inputValue));//llamo funcion maskify(tomo ojeto con funcion mas valor)
 let mostrarDigitos = document.getElementById("mostrarDigitos");//tomar id de parrafo
 mostrarDigitos.innerHTML = "El número de su tarjeta es : " + validator.maskify(inputValue) ;//mostrar js en html
 
