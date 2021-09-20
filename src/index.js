@@ -16,7 +16,7 @@ alert("Tarjeta valida");
 
 document.getElementById("number").value = ""; //desaparezca el valor input
 
-validator.isValid(inputValue);// llame funcion de isValid  de validator.js
+
 //console.log(validator.isValid(inputValue));
 //console.log(validator.maskify(inputValue));//llamo funcion maskify(tomo ojeto con funcion mas valor)
 let mostrarDigitos = document.getElementById("mostrarDigitos");//tomar id de parrafo
